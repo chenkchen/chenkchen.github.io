@@ -79,17 +79,27 @@
 
 
 
-<meta name="description" content="code，也不仅仅是code">
+<meta name="description" content="#Hexo+github搭建自己的博客在好友冬瓜的推荐下，我开启了hexo的新天地。话不多说，直接上hexo+github博客的搭建教程吧~">
 <meta property="og:type" content="article">
 <meta property="og:title" content="终于把hexo搭出一个雏形了">
 <meta property="og:url" content="http://yoursite.com/2017/11/14/终于把hexo搭出一个雏形了/index.html">
 <meta property="og:site_name" content="ChenkChen">
-<meta property="og:description" content="code，也不仅仅是code">
+<meta property="og:description" content="#Hexo+github搭建自己的博客在好友冬瓜的推荐下，我开启了hexo的新天地。话不多说，直接上hexo+github博客的搭建教程吧~">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-14T07:38:00.532Z">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/9040192-7b65dc3ea79b50aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/9040192-6e7607173288e8b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/9040192-b4bcdbbff57db6c7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/9040192-6f9c824c13ed1013.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/9040192-f1f221a301e27dbf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/9040192-710cfda64f240e70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/9040192-59bd268ae50b250f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/9040192-d7825d4805de67b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/9040192-bd6a35004ffb1543.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-11-15T08:52:06.986Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="终于把hexo搭出一个雏形了">
-<meta name="twitter:description" content="code，也不仅仅是code">
+<meta name="twitter:description" content="#Hexo+github搭建自己的博客在好友冬瓜的推荐下，我开启了hexo的新天地。话不多说，直接上hexo+github博客的搭建教程吧~">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/9040192-7b65dc3ea79b50aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -305,6 +315,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/11/14/终于把hexo搭出一个雏形了/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/11/14/终于把hexo搭出一个雏形了/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -329,7 +350,18 @@
       
 
       
-        
+        <p>#Hexo+github搭建自己的博客<br>在好友冬瓜的推荐下，我开启了hexo的新天地。<br>话不多说，直接上hexo+github博客的搭建教程吧~<br><a id="more"></a></p>
+<ul>
+<li>说在前面—<br>要注意每行代码里的空格，每安装完一样，请务必验证是否安装成功。</li>
+<li>准备工作——<br>1、下载安装NodeJs以及Git bash。安装完成，打开Git bash，分别输入<code>node -v</code>，回车以及<code>git -v</code>回车查看版本，验证是否安装成功。<br>2、注册github账号。</li>
+<li><p>主角登场——<br>1、新建需要存放hexo博客的文件夹，打开git bash，将路径定位到这个文件夹。<img src="http://upload-images.jianshu.io/upload_images/9040192-7b65dc3ea79b50aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="进入到博客路径"></p>
+<p>2、安装hexo:  执行<code>npm i -g hexo</code> ,安装完毕输入hexo -v检测版本验证安装是否成功。<br>3、初始化hexo：执行<code>hexo init</code>,完毕可以看到我们博客的文件夹里出现了hexo的文件<img src="http://upload-images.jianshu.io/upload_images/9040192-6e7607173288e8b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="hexo博客文件夹里的文件"></p>
+</li>
+<li>github桥接——<br>1、登录github，新建repository，name为githubname.github,io，githubname是前面的名字。<br><img src="http://upload-images.jianshu.io/upload_images/9040192-b4bcdbbff57db6c7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="新建repo"><br><img src="http://upload-images.jianshu.io/upload_images/9040192-6f9c824c13ed1013.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="简单的配置"><br>2、回到git bash，配置github账号信息，获得ssh，与github建立连接<br><code>git config --global user.name &quot;你的github用户名&quot;</code><br><img src="http://upload-images.jianshu.io/upload_images/9040192-f1f221a301e27dbf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配置用户名"><br><code>git config --global user.email &quot;你的github邮箱&quot;</code><br><img src="http://upload-images.jianshu.io/upload_images/9040192-710cfda64f240e70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><code>ssh-keygen -t rsa -C &quot;你的github邮箱&#39;</code><br>完成后定位到.ssh目录下，输入<br><code>cat id_rsa.pub</code><br>将获得的ssh-rsa（含）的一大串编码复制，粘贴到github的SSHkey中<br><img src="http://upload-images.jianshu.io/upload_images/9040192-59bd268ae50b250f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="获得ssh key"><br><img src="http://upload-images.jianshu.io/upload_images/9040192-d7825d4805de67b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="进入github设置页面添加ssh"><br><img src="http://upload-images.jianshu.io/upload_images/9040192-bd6a35004ffb1543.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="添加ssh key"><br>完成后，在git bash中输入 <code>ssh -T git@github.com</code>验证是否桥接成功。<br>（成功会出现Hi….等一串英文）</li>
+<li>hexo部署——<br>在hexo文件夹内找到_config.yml配置文件。<br>配置deploy为<br>type: git<br>repo： <a href="https://github.com/你的giuthub用户名/你的github用户名.github.io.git" target="_blank" rel="external">https://github.com/你的giuthub用户名/你的github用户名.github.io.git</a><br>branch: master<br>!注意冒号后面的空格</li>
+<li>hexo本地服务——<br>就差最后一步了，<br>先安装hexo本地服务：<code>npm i hexo-server</code>,<br>再依次执行<code>hexo clean</code><br><code>hexo generate</code><br>`hexo server’<br>本地建立服务，<br>最后，访问<a href="http://localhost:4000，cheers！" target="_blank" rel="external">http://localhost:4000，cheers！</a></li>
+</ul>
+
       
     </div>
     
@@ -391,6 +423,16 @@
           
 
   
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
 
 
 
@@ -444,6 +486,26 @@
           
 
           <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/chenkchen" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:chenyl0510@163.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="wechat：516594979" target="_blank" title="wechat">
+                    
+                      <i class="fa fa-fw fa-weixin"></i>wechat</a>
+                </span>
+              
             
           </div>
 
@@ -621,6 +683,26 @@
 
   
 
+    
+      <script id="dsq-count-scr" src="https://chenkchen.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2017/11/14/终于把hexo搭出一个雏形了/';
+          this.page.identifier = '2017/11/14/终于把hexo搭出一个雏形了/';
+          this.page.title = '终于把hexo搭出一个雏形了';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://chenkchen.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
 
 
 
@@ -633,10 +715,6 @@
   
 
 
-
-
-
-  
 
 
 
