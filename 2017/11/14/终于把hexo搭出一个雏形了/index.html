@@ -95,7 +95,7 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/9040192-59bd268ae50b250f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/9040192-d7825d4805de67b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/9040192-bd6a35004ffb1543.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-11-15T08:52:06.986Z">
+<meta property="og:updated_time" content="2017-11-16T06:26:41.761Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="终于把hexo搭出一个雏形了">
 <meta name="twitter:description" content="#Hexo+github搭建自己的博客在好友冬瓜的推荐下，我开启了hexo的新天地。话不多说，直接上hexo+github博客的搭建教程吧~">
@@ -361,7 +361,21 @@
 <li>hexo部署——<br>在hexo文件夹内找到_config.yml配置文件。<br>配置deploy为<br>type: git<br>repo： <a href="https://github.com/你的giuthub用户名/你的github用户名.github.io.git" target="_blank" rel="external">https://github.com/你的giuthub用户名/你的github用户名.github.io.git</a><br>branch: master<br>!注意冒号后面的空格</li>
 <li>hexo本地服务——<br>就差最后一步了，<br>先安装hexo本地服务：<code>npm i hexo-server</code>,<br>再依次执行<code>hexo clean</code><br><code>hexo generate</code><br>`hexo server’<br>本地建立服务，<br>最后，访问<a href="http://localhost:4000，cheers！" target="_blank" rel="external">http://localhost:4000，cheers！</a></li>
 </ul>
-
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'location.href', // 可选。默认为 location.href
+  owner: 'chenkchen',  //改你自己的名字
+  repo: 'Comments',  //专门储存评论一个GitHub仓库
+  oauth: {
+    client_id: 'a3cfdae3b15a025e8477', //改为你自己的，下同
+    client_secret: 'f5b850a6c6d176bbdf035d8c1d4e12c1c3758c61', 
+  },
+})
+gitment.render('container')
+</script>
       
     </div>
     
