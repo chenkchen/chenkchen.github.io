@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="code，也不仅仅是code">
+<meta name="description" content="var gitment = new Gitment({   id: &apos;location.href&apos;, // 可选。默认为 location.href   owner: &apos;chenkchen&apos;,  //改你自己的名字   repo: &apos;Comments&apos;,  //专门储存评论一个GitHub仓库   oauth: {     client_id: &apos;a3cfdae3b15a025e8477&apos;">
 <meta property="og:type" content="website">
-<meta property="og:title" content="guestbook">
+<meta property="og:title" content="说点什么吧">
 <meta property="og:url" content="http://yoursite.com/guestbook/index.html">
 <meta property="og:site_name" content="ChenkChen">
-<meta property="og:description" content="code，也不仅仅是code">
+<meta property="og:description" content="var gitment = new Gitment({   id: &apos;location.href&apos;, // 可选。默认为 location.href   owner: &apos;chenkchen&apos;,  //改你自己的名字   repo: &apos;Comments&apos;,  //专门储存评论一个GitHub仓库   oauth: {     client_id: &apos;a3cfdae3b15a025e8477&apos;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-14T09:27:02.039Z">
+<meta property="og:updated_time" content="2017-11-16T06:22:05.707Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="guestbook">
-<meta name="twitter:description" content="code，也不仅仅是code">
+<meta name="twitter:title" content="说点什么吧">
+<meta name="twitter:description" content="var gitment = new Gitment({   id: &apos;location.href&apos;, // 可选。默认为 location.href   owner: &apos;chenkchen&apos;,  //改你自己的名字   repo: &apos;Comments&apos;,  //专门储存评论一个GitHub仓库   oauth: {     client_id: &apos;a3cfdae3b15a025e8477&apos;">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <title>guestbook | ChenkChen</title>
+  <title>说点什么吧 | ChenkChen</title>
   
 
 
@@ -255,7 +255,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">guestbook</h1>
+	<h1 class="post-title" itemprop="name headline">说点什么吧</h1>
 
 
 
@@ -267,7 +267,21 @@
       <div class="post-body">
         
         
-          
+          <p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'location.href', // 可选。默认为 location.href
+  owner: 'chenkchen',  //改你自己的名字
+  repo: 'Comments',  //专门储存评论一个GitHub仓库
+  oauth: {
+    client_id: 'a3cfdae3b15a025e8477', //改为你自己的，下同
+    client_secret: 'f5b850a6c6d176bbdf035d8c1d4e12c1c3758c61', 
+  },
+})
+gitment.render('container')
+</script>
         
       </div>
       
@@ -556,7 +570,7 @@
         var disqus_config = function () {
           this.page.url = 'http://yoursite.com/guestbook/index.html';
           this.page.identifier = 'guestbook/index.html';
-          this.page.title = 'guestbook';
+          this.page.title = '说点什么吧';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://chenkchen.disqus.com/embed.js';
